@@ -51,3 +51,14 @@ try:
         print("Content-Type:", response.getheader("Content-Type"))
 except urllib.error.URLError as e:
     print(f"Error: {e}")
+
+#question 1
+import urllib.request as ur, urllib.error as ue
+try:
+    with ur.urlopen('http://data.pr4e.org/romeo.txt') as response:
+       
+        print(response.getheader('Server'))
+        print(response.getheader('content-type'))
+except ue.URLError as e:
+    print(f'Error fetching data: {e}') 
+    
