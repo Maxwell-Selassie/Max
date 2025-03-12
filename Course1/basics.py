@@ -1,11 +1,11 @@
-# question 1
+# Scenario 1
 def greet_all(names):
     '''Prints the name of individuals'''
     for name in names:
         print(f'Hello, {name}!')
 greet_all(['Alice', 'Bob', 'Charlie'])
 
-# question 2
+# Scenario 2
 def classify_numbers(numbers):
     '''Classifies numbers into positive and negative'''
     ps_count = 0
@@ -18,7 +18,7 @@ def classify_numbers(numbers):
     return (ps_count, ng_count)
 print(classify_numbers([3, -1, 0, 5, -7, 2]))
 
-# question 5 (part of basics: input handling)
+# Scenario 3(part of basics: input handling)
 def sum_to_n(n):
     total = 0
     for i in range(1, n + 1):
@@ -26,7 +26,7 @@ def sum_to_n(n):
     return total
 print(sum_to_n(5))
 
-# question 6 (basic function with input)
+# Scenario 4 (basic function with input)
 def fav_number(number):
     try:
         number = int(number)
@@ -39,7 +39,7 @@ def fav_number(number):
         return 0
 print(fav_number(input('Enter your favorite number: ')))
 
-# question 9 (basic loop with condition)
+# Scenario 5 (basic loop with condition)
 def sum_even(number):
     total = 0
     for i in range(1, number + 1):

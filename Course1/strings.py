@@ -1,9 +1,9 @@
-# question 7
+# Scenario 1
 def reverse_string(text):
     return text[::-1]
 print(reverse_string('Hello'))
 
-# question 8
+# Scenario 2
 def convert_grade(score):
     if 90 <= score <= 100:
         return 'A'
@@ -19,14 +19,14 @@ def convert_grade(score):
         return f'You have entered an invalid score {score}'
 print(convert_grade(14.5))
 
-# question 10
+# Scenario 3
 def is_palindrome(text):
     checked = ''.join(char.lower() for char in text if char.isalnum())
     return 'True' if checked == checked[::-1] else 'False'
 print(is_palindrome('A man a plan a canal Panama'))
 print(is_palindrome('hello'))
 
-# question 11
+# Scenario 4
 def count_unique_char(text):
     char_count = ''
     for char in text:

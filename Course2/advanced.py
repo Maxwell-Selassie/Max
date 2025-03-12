@@ -1,4 +1,4 @@
-# question 22
+# Scenario 1
 def analyze_feedback(filename):
     '''Analyze customer feedback and return ratings with comments, in descending order'''
     try:
@@ -24,7 +24,7 @@ def analyze_feedback(filename):
         return {}
 print(analyze_feedback('feedback.txt'))
 
-# question 23
+# Scenario 2
 def summarize_ingredient(filename):
     try:
         recipe = {}
@@ -50,7 +50,7 @@ def summarize_ingredient(filename):
         return {}
 print(summarize_ingredient('recipe.txt'))
 
-# question 24
+# Scenario 3
 def generate_confirmations(filename, output_file):
     try:
         confirmation_counts = 0
@@ -73,7 +73,7 @@ def generate_confirmations(filename, output_file):
         return 0
 print(generate_confirmations('orders.txt', 'confirmations.txt'))
 
-# question 25
+# Scenario 4
 def average_grades(filename):
     try:
         grade_dict = {}
@@ -106,7 +106,7 @@ def average_grades(filename):
         return {}
 print(average_grades('grades.txt'))
 
-# question 26
+# Scenario 5
 def track_workouts(filename):
     '''Track workouts and return the total minutes for each exercise'''
     try:
@@ -132,7 +132,7 @@ def track_workouts(filename):
         return []
 print(track_workouts('workouts.txt'))
 
-# question 27
+# Scenario 6
 def log_checkins(filename, date):
     try:
         checkin_list = []
@@ -154,7 +154,7 @@ def log_checkins(filename, date):
         return []
 print(log_checkins('guests.txt', '2023-01-01'))
 
-# question 28
+# Scenario 7
 def borrowing_status(filename):
     try:
         status_dict = {}
@@ -177,7 +177,7 @@ def borrowing_status(filename):
         return {}
 print(borrowing_status('books.txt'))
 
-
+#Scenario 8
 def build_itinerary(filename, destination):
     try:
         itinerary_list = []

@@ -1,4 +1,4 @@
-# question 7
+# Scenario 1
 def unique_words(filename):
     try:
         word_set = set()
@@ -12,7 +12,7 @@ def unique_words(filename):
         return []
 print(unique_words('poem.txt'))
 
-# question 8
+# Scenario 2
 def reversed_lines(filename):
     try:
         reversed_lines_list = []
@@ -25,7 +25,7 @@ def reversed_lines(filename):
         return []
 print(reversed_lines('text.txt'))
 
-# question 25 (string/set-like manipulation)
+# Scenario 3 (string/set-like manipulation)
 def remove_duplicates(filename):
     try:
         dup_list = []

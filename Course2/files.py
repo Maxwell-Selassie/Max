@@ -1,4 +1,4 @@
-# question 3
+# Scenario 1
 def line_counters(filename):
     '''Count the number of non-blank lines'''
     try:
@@ -13,7 +13,7 @@ def line_counters(filename):
         return 0
 print(line_counters('notes.txt'))
 
-# question 4
+# Scenario 2
 def word_frequency(filename):
     '''Returns a dictionary of the top 3 most frequent words (case-insensitive)'''
     try:
@@ -32,7 +32,7 @@ def word_frequency(filename):
         return {}
 print(word_frequency('story.txt'))
 
-# question 5
+# Scenario 3
 def longest_line(filename):
     '''Returns the length of the longest line in the file'''
     try:
@@ -48,7 +48,7 @@ def longest_line(filename):
         return 0
 print(longest_line('notes.txt'))
 
-# question 6
+# Scenario 4
 def count_vowels(filename):
     '''Counts the number of vowels in a file'''
     try:
@@ -64,7 +64,7 @@ def count_vowels(filename):
         return 0
 print(count_vowels('poem.txt'))
 
-# question 9
+# Scenario 5
 def find_word(filename, word):
     try:
         count = 0
@@ -78,7 +78,7 @@ def find_word(filename, word):
         return 0
 print(find_word('story.txt', 'the'))
 
-# question 10
+# Scenario 6
 def first_words(filename):
     '''Returns the first words in each line'''
     try:
@@ -94,7 +94,7 @@ def first_words(filename):
         return []
 print(first_words('word.txt'))
 
-# question 11
+# Scenario 7
 def count_enders(filename, letter):
     try:
         count = 0
@@ -109,7 +109,7 @@ def count_enders(filename, letter):
         return 0
 print(count_enders('word.txt', 't'))
 
-# question 12
+# Scenario 8
 def capital_lines(filename):
     try:
         cap_lines = []
@@ -124,7 +124,7 @@ def capital_lines(filename):
         return []
 print(capital_lines('caps.txt'))
 
-# question 13
+# Scenario 9
 def avg_length(filename):
     try:
         total_len = 0
@@ -142,7 +142,7 @@ def avg_length(filename):
         return 0
 print(avg_length('word.txt'))
 
-# question 14
+# Scenario 10
 def palindrome(filename):
     try:
         pal = []
@@ -159,7 +159,7 @@ def palindrome(filename):
         return []
 print(palindrome('palindrome.txt'))
 
-# question 15
+# Scenario 11
 def longest_word(filename):
     '''Returns the length of the first longest word in the file'''
     try:
@@ -178,7 +178,7 @@ def longest_word(filename):
         return 0
 print(longest_word('longest_word.txt'))
 
-# question 16
+# Scenario 12
 def prefix(filename):
     try:
         prefixes = []
@@ -193,7 +193,7 @@ def prefix(filename):
 for line in prefix('text.txt'):
     print(line)
 
-# question 17
+# Scenario 13
 def concat_lines(filename):
     try:
         lines = []
@@ -206,7 +206,7 @@ def concat_lines(filename):
         return ''
 print(concat_lines('text.txt'))
 
-# question 18
+# Scenario 14
 def last_words(filename):
     try:
         last_word_list = []
@@ -221,7 +221,7 @@ def last_words(filename):
         return []
 print(last_words('last.txt'))
 
-# question 19
+# Scenario 15
 def upper_words(filename):
     try:
         upper_list = []
@@ -237,7 +237,7 @@ def upper_words(filename):
         return []
 print(upper_words(input('Enter the file name: ')))
 
-# question 20
+# Scenario 16
 def shortest_line(filename):
     try:
         shortest_line = None
@@ -256,7 +256,7 @@ def shortest_line(filename):
         return ''
 print(shortest_line(input('Enter the file name: ')))
 
-# question 21
+# Scenario 17
 def odd_word(filename):
     try:
         odd_list = []
