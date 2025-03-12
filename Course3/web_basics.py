@@ -63,13 +63,27 @@
 #     print(f'Error fetching data: {e}') 
 
 #question 2
+# import urllib.request as ur, urllib.error as ue
+# try:
+#     with ur.urlopen('http://data.pr4e.org/romeo.txt') as response:
+#         data = response.read().decode()
+#         with open('local_romeo.txt','w') as file:
+#             file.write(data)
+#         print('Data has been written to local file')
+# except ue.URLError as e:
+#     print(f'Error parsing url: {e}')
+
+
 import urllib.request as ur, urllib.error as ue
+import json
 try:
-    with ur.urlopen('http://data.pr4e.org/romeo.txt') as response:
+    url = "http://py4e-data.dr-chuck.net/comments_2168495.json"
+    with ur.urlopen(url) as response:
         data = response.read().decode()
-        with open('local_romeo.txt','w') as file:
-            file.write(data)
-        print('Data has been written to local file')
+        info = json.loads(data)
+        counts = [item['count'] for item in info['comments']]
+        print(sum(counts))
 except ue.URLError as e:
     print(f'Error parsing url: {e}')
-
+except json.JSONDecodeError as e:
+    print(f'Error parsing json: {e}')
